@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Brain Checkup</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+    body {
+
+        margin: 0;
+
+        font-family: Arial, Helvetica, sans-serif;
+        
+        background-image: url('/static/images/b.jpg');
+
+  
+         height: 100%; 
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+ 
+
+    .hero-image {
+
+       /*background: url("b.jpg") no-repeat center;*/
+
+        background-size: cover;
+
+        height: 500px;
+
+        position: relative;
+
+    }
+
+ 
+
+    .hero-text {
+
+        text-align: center;
+
+        position: absolute;
+
+        top: 50%;
+
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        color: rgb(245, 245, 245);
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="hero-image">
+
+        <div class="hero-text">
+
+            <h1 style="font-size:50px">Welcome to Brain Checkup</h1>
+
+            <h3>And were here to Help You</h3>
+            
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <input type="file" name="file" accept="image/*" />
+                <input type="submit" name="Click">
+            </form>
+            <form action='/my-link/'>
+                <input class="button is-success is-medium" type="submit" value="Submit" name="Click" />
+                </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
